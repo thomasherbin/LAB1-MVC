@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Index MVC application</title>
+    <link rel="stylesheet" type="text/css" href="myFirstStyle.css">
+    <script type="text/javascript" src="myFirstScript.js"></script>
+</head>
+<body>
+<h2 id="title"></h2>
+    <form action="ServletController" method="post" onsubmit="return validateMyForm()">
+        <fieldset>
+            <legend>Personnal information:</legend>
+            <div class="input">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" /><br>
+            </div>
+            <div class="input">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName"/><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Birth Date:</legend>
+            <label for="birthDate">Date:</label>
+                <input type="text" name="birthDate" id="birthDate" /><br>
+        </fieldset>
+        <fieldset>
+            <legend>Sex:</legend>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" value="Male" onchange="toogleFM()" id="Male"><br>
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" value="Female" onchange="toogleFM()" id="Female" checked>
+        </fieldset>
+        <br><input type="submit" id="buttons-hbox" />
+    </form>
+</body>
+</html>

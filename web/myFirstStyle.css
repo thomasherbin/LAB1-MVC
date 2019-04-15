@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+fieldset {
+    border-color: red;
+    margin: 10px 0px;
+}
+
+legend {
+    color: red;
+}
+
